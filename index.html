@@ -4,6 +4,26 @@
     <title>Rishabh Khosla Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+	<title>Visitor Counter</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get total visit count
+            let visitCount = localStorage.getItem("visitCount");
+            visitCount = visitCount ? parseInt(visitCount) + 1 : 1;
+            localStorage.setItem("visitCount", visitCount);
+
+            // Get session visit count
+            let sessionVisit = sessionStorage.getItem("sessionVisit");
+            if (!sessionVisit) {
+                sessionStorage.setItem("sessionVisit", "1");
+            }
+
+            // Log visit count to console
+            console.log(`Total Visits: ${visitCount}`);
+        });
+    </script>
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -160,9 +180,9 @@
 
 						// Create an array of typing text
 						const typingTexts = [
-						'Engineer  ',
-						'BI Analyst  ',
-						'Data Scientist   ',
+						'Business Analyst  ',
+						'Dashboard Expert  ',
+						'Data Enthusiast   ',
 						];
 
 						// Create a function to display the typing animation for a given text
@@ -192,7 +212,7 @@
 						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
 						<!-- <br> -->
 			            <p><a href="https://www.linkedin.com/in/Rishabh-Khosla/" target="_blank" rel="noopener noreferrer" class="btn btn-white btn-outline-primary py-3 px-4">LinkedIn</a> 
-							<a href="https://drive.google.com/file/d/1hx3FAYPie0eK0Huia6RKFu-zMQB3Rmap/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-3 px-4">Resume</a></p>
+							<a href="https://drive.google.com/file/d/1c44yrjEE6pyeAGoIgq6MFowqIQWQKHq0/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-3 px-4">Resume</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -221,8 +241,8 @@
 									<div class="col-sm-6 col-md-7">
 									  <div class="about-info">
 										<p><span class="title-s">Name: </span> <span>Rishabh Khosla</span></p>
-										<p><span class="title-s">Job Role: </span> <span>Senior Data Analyst</span></p>
-										<p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Senior Business Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>5+ Years</span></p>
 										<p><span class="title-s">Address: </span> <span>Boston, USA</span></p>
 									  </div>
 									</div>
@@ -230,15 +250,15 @@
 
 								<div class="skill-mf">
 								<p></p><p class="title-s">Skills</p>
-									<span>SQL</span> <span class="pull-right">95%</span>
+									<span>SQL</span> <span class="pull-right">85%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
 									
-									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<span>MS Excel and MS Powerpoint</span> <span class="pull-right">95%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
 									
@@ -254,15 +274,15 @@
 											aria-valuemax="100"></div>
 									</div>
 									
-									<span>Machine Learning</span> <span class="pull-right">70%</span>
+									<span>Dashboard Designing</span> <span class="pull-right">90%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
 
-									<span>Project Management</span> <span class="pull-right">90%</span>
+									<span>Project Management</span> <span class="pull-right">80%</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="900" aria-valuemin="0"
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="800" aria-valuemin="0"
 											aria-valuemax="100"></div>
 									</div>
 								</div>
@@ -283,7 +303,7 @@
 									Demonstrated success in leading impactful projects and providing effective mentorship.</p>
 								<ul class="about-info mt-4 px-md-0 px-2">
 									<li class="d-flex"><span>Profile:</span> <span>Data &amp; Business Intelligence Analytics</span></li>
-									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, Healthcare, IT Consulting, Inventory Management &amp; Project Finance and Auditing</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Healthcare, Pharmacy, IT Consulting, Inventory Management &amp; Project Finance and Auditing</span></li>
 									<li class="d-flex"><span>Education:</span> <span>Master of Science (<b>MS</b>)</span></li>
 									<li class="d-flex"><span>Programming Language:</span> <span>Python(NumPy, Pandas, LLM, PySpark, Seaborn, SciPy, LangChain, OpenAI), R, SQL, HTML5/CSS, React, Javascript, Spark</span></li>
 									<li class="d-flex"><span>Database:</span> <span>MySQL, SQL Server, PostgreSQL, Snowflake, Oracle DB, Azure SQL, NoSQL, MongoDB</span></li>
@@ -305,7 +325,7 @@
 									<span class="number" data-number="20">0</span> <span>+</span>
 									<span>&nbsp; Projects completed</span>
 								</p>
-								<p><a href="https://www.linkedin.com/in/Rishabh-Khosla/" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+								<p><a href="https://github.com/rishabh97khosla" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
 							</div>
 						</div>
 					</div>
@@ -324,7 +344,7 @@
           	<h1 class="big big-2">Experience</h1>
             <h2 class="mb-4">Experience</h2>
 			<div class="underline"></div>
-            <br/><p>Seasoned Senior Data Analyst with 5+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p>
+            <br/><p>Seasoned Senior Business Analyst with 5+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p>
           </div>
         </div>
 
@@ -337,13 +357,16 @@
 		<div class="row">
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
-						<span class="date">2022-2024</span>
-						<h2>Business Process Analyst</h2>
-						<span class="position">ITS - Northeastern University</span>
-						<p class="mt-4">Information Techniology Services (ITS), is the IT department for Northeastern University cateering IT solutions for over millions of students, staff and alumini globally. 
+						<span class="date">2024-Present</span>
+						<h2>Business Intelligence Engineer</h2>
+						<span class="position">Testology, Inc.</span>
+						<p class="mt-4"> Testology is a Boston based Drug and Toxicology Screening Center. Testology supports thousands of patients with specialized and regular drug screening services.
 							<ul>
-								<li>Simplified the hiring process by creating real-time tracking dashboards, automating interview workflows, and building a tool to rank applicants by skills.</li>
-								<li>Boosted efficiency with Power Automate for scheduling and shift tracking, and collaborated on a Generative AI tool to speed up document searches.</li>
+								<li>Ensured data followed privacy and security rules like GDPR and HIPAA, improving report accuracy and building trust in the data for better decisions.</li>
+								<li>Made data easier to access for lab technicians and stakeholders, while creating dashboards and testing lab equipments to support smarter equipment choices and boost sales.</li>
+								<li>Created helpful, easy-to-read dashboards to show important information, so the research team could make smarter choices.</li>
+
+								
 								<!--li>Saved time by using Power Automate to reduce manual work by setting up automated systems, like for scheduling and tracking shifts.</li> 
 								<li>Additionally, helped make vast document searches faster by working with Data Scientists on a Generative AI tool.</li-->
 							</ul>
@@ -354,14 +377,19 @@
 
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
-						<span class="date">2022-2022</span>
-						<h2>Data Science Analyst</h2>
-						<span class="position">Highmark Health</span>
-						<p class="mt-4">Highmark Health is a large individual American non-profit healthcare company. Highmark supports millions of customers with products, services and solutions. 
+						<span class="date">2022-2024</span>
+						<h2>Business Process Analyst</h2>
+						<span class="position">ITS - Northeastern University</span>
+						<p class="mt-4">Information Techniology Services (ITS), is the IT department for Northeastern University cateering IT solutions for over millions of students, staff and alumini globally.
+						<!--p class="mt-4">Highmark Health is a large individual American non-profit healthcare company. Highmark supports millions of customers with products, services and solutions. --> 
 							<ul>
-								<li>Ensured data followed privacy and security rules like GDPR and HIPAA, improving report accuracy and building trust in the data for better decisions.</li>
+								<li>Simplified the hiring process by creating real-time tracking dashboards, automating interview workflows, and building a tool to rank applicants by skills.</li>
+								<li>Boosted efficiency with Power Automate for scheduling and shift tracking, and collaborated on a Generative AI tool to speed up document searches.</li>
+								<li>Saved time by using Power Automate to reduce manual work by setting up automated systems, like for scheduling and tracking shifts.</li>
+
+								<!--li>Ensured data followed privacy and security rules like GDPR and HIPAA, improving report accuracy and building trust in the data for better decisions.</li>
 								<li>Made data easier to access for doctors and nurses, while creating dashboards and testing gadget designs to support smarter product choices and boost sales.</li>
-								<!--li>Created helpful, easy-to-read dashboards to show important info from wearable devices, so the research team could make smarter choices about new products.</li>
+								<li>Created helpful, easy-to-read dashboards to show important info from wearable devices, so the research team could make smarter choices about new products.</li>
 								<li>Tested different gadget designs with thousands of users to find out which one people liked best, helping the company sell more products.</li-->
 							</ul>
 						</p>
@@ -475,33 +503,33 @@
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabh97khosla/SQL_Music_Store_Analysis_main/blob/main/Music_Store_Query.sql" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              <a href="https://github.com/rishabh97khosla/SQL_Music_Store_Analysis_main" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabh97khosla/SQL_Music_Store_Analysis_main/blob/main/Music_Store_Query.sql" target="_blank" rel="noopener noreferrer">Digital Music Store Data Analysis using SQL</a></h3>
+                <h3 class="heading"><a href="https://github.com/rishabh97khosla/SQL_Music_Store_Analysis_main" target="_blank" rel="noopener noreferrer">Digital Music Store Data Analysis using SQL</a></h3>
                 <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabh97khosla/Python_Diwali_Sales_Analysis_main/blob/main/Diwali_Sales_Analysis.ipynb" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              <a href="https://github.com/rishabh97khosla/Python_Diwali_Sales_Analysis_main" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabh97khosla/Python_Diwali_Sales_Analysis_main/blob/main/Diwali_Sales_Analysis.ipynb" target="_blank" rel="noopener noreferrer">Data Analysis using Python Project</a></h3>
+                <h3 class="heading"><a href="https://github.com/rishabh97khosla/Python_Diwali_Sales_Analysis_main" target="_blank" rel="noopener noreferrer">Data Analysis using Python Project for Beginners</a></h3>
                 <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="https://github.com/rishabh97khosla/SRBD_Sales_PowerBI_Dashboard_main/blob/main/Dashboard.png" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              <a href="https://github.com/rishabh97khosla/SRBD_Sales_PowerBI_Dashboard_main" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabh97khosla/SRBD_Sales_PowerBI_Dashboard_main/blob/main/Dashboard.png" target="_blank" rel="noopener noreferrer">Power BI Sales dashboard Project for Beginners</a></h3>
+                <h3 class="heading"><a href="https://github.com/rishabh97khosla/SRBD_Sales_PowerBI_Dashboard_main" target="_blank" rel="noopener noreferrer">Power BI Sales dashboard Project for Beginners</a></h3>
                 <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
               </div>
             </div>
@@ -523,11 +551,11 @@
 			</div>
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabh97khosla/Cutomer_Segmentation_main/blob/main/Customer_Segmentation-final.ipynb" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				<a href="https://github.com/rishabh97khosla/Cutomer_Segmentation_main" target="_blank" rel="noopener noreferrer" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
 				</a>
 				<div class="text mt-3 float-right d-block">
   
-				  <h3 class="heading"><a href="https://github.com/rishabh97khosla/Cutomer_Segmentation_main/blob/main/Customer_Segmentation-final.ipynb" target="_blank" rel="noopener noreferrer">Customer Segmentation using clustering model</a></h3>
+				  <h3 class="heading"><a href="https://github.com/rishabh97khosla/Cutomer_Segmentation_main" target="_blank" rel="noopener noreferrer">Customer Segmentation using clustering model</a></h3>
 				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
 				</div>
 			  </div>
@@ -612,32 +640,38 @@
 	            <p>Boston, USA</p>
 	          </div>
           </div>
+
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+			<a href="tel://18573132735" target="_blank" rel="noopener noreferrer">
           	<div class="align-self-stretch box p-4 text-center">
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-phone2"></span>
           		</div>
           		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://18573132735" target="_blank" rel="noopener noreferrer">+ 1 (857) 313-2735</a></p>
-	          </div>
+	            <p>+ 1 (857) 313-2735</p>
+	          </div></a>
           </div>
+
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+			<a href="mailto:khosla.ris@northeastern.edu" target="_blank" rel="noopener noreferrer">
           	<div class="align-self-stretch box p-4 text-center">
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-paper-plane"></span>
           		</div>
           		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:khosla.ris@northeastern.edu" target="_blank" rel="noopener noreferrer">khosla.ris@northeastern.edu</a></p>
-	          </div>
+	            <p>khosla.ris@northeastern.edu</p>
+	          </div></a>
           </div>
+
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+			<a href="https://drive.google.com/file/d/1c44yrjEE6pyeAGoIgq6MFowqIQWQKHq0/view?usp=sharing" target="_blank" rel="noopener noreferrer">
           	<div class="align-self-stretch box p-4 text-center">
           		<div class="icon d-flex align-items-center justify-content-center">
           			<span class="icon-file"></span>
           		</div>
           		<h3 class="mb-4">Resume</h3>
-	            <p><a href="https://drive.google.com/file/d/1hx3FAYPie0eK0Huia6RKFu-zMQB3Rmap/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download Resume</a></p>
-	          </div>
+	            <p>Download Resume</p>
+	          </div></a>
           </div>
 
 		  <div class="container">
@@ -665,18 +699,18 @@
 
  
 	
-    <!--footer class="ftco-footer ftco-section">
+    <footer class="ftco-footer ftco-section">
 		<div class="container">
 		  <div class="row">
 			<div class="col-md-12 text-center">
   
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. >
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. ></p>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 			</div>
 		  </div>
 		</div>
-  </footer>
+	  </footer>
 
 
   <!-- loader -->
